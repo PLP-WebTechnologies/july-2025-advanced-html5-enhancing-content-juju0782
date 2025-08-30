@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple Hotel Management page with lists, tables, media, and form.">
+  <title>Hotel Booking</title>
+</head>
+<body>
+  <header>
+    <h1>GrandStay Hotel</h1>
+    <p>Welcome to your home away from home</p>
+  </header>
+
+  <main>
+    <!-- List -->
+    <section>
+      <h2>Amenities</h2>
+      <ul>
+        <li>Free Wi-Fi</li>
+        <li>Spa & Gym</li>
+        <li>Swimming Pool</li>
+      </ul>
+    </section>
+
+    <!-- Table -->
+    <section>
+      <h2>Room Prices</h2>
+      <table border="1">
+        <tr><th>Room</th><th>Price</th></tr>
+        <tr><td>Standard</td><td>$80</td></tr>
+        <tr><td>Deluxe</td><td>$120</td></tr>
+      </table>
+    </section>
+
+    <!-- Media -->
+    <section>
+      <h2>Our Hotel</h2>
+      <img src="hotel.jpg" alt="Hotel front view" width="300">
+      <audio controls>
+        <source src="music.mp3" type="audio/mpeg">
+      </audio>
+    </section>
+
+    <!-- Form -->
+    <section>
+      <h2>Book a Room</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required minlength="3"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="checkin">Check-in:</label>
+        <input type="date" id="checkin" required><br><br>
+
+        <label for="room">Room:</label>
+        <select id="room" required>
+          <option value="">--Select--</option>
+          <option>Standard</option>
+          <option>Deluxe</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GrandStay Hotel</p>
+  </footer>
+</body>
+</html>
